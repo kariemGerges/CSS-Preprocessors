@@ -1,0 +1,23 @@
+@import "variables.less";
+
+.box-generator(@color, @width, @height) {
+  background-color: @color;
+  width: @width;
+  height: @height;
+}
+
+.box-red {
+  .box-generator(@red, 100px, 100px);
+}
+
+.box-blue {
+  .box-generator(@blue, 200px, 200px);
+}
+
+.box-green {
+  .box-generator(@green, 250px, 250px);
+}
+
+.box-purple {
+  .box-generator(@purple, 50px, 50px);
+}
